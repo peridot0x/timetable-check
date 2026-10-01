@@ -1,0 +1,6 @@
+{
+  "name": "공강메이트 - 대학생 시간표 비교 & 실시간 겹치는 공강 찾기",
+  "description": "친구와 시간표를 비교하여 겹치는 공강 시간을 실시간으로 찾아주고 위젯, 맞춤 알림, 클라우드 백업을 지원하는 대학생 필수 공강 체크 웹앱입니다.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

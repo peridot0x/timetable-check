@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
+
+/* Diagonal stripes pattern for overlapping free time in timetable */
+.bg-stripes-overlap {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(16, 185, 129, 0.08),
+    rgba(16, 185, 129, 0.08) 8px,
+    rgba(16, 185, 129, 0.18) 8px,
+    rgba(16, 185, 129, 0.18) 16px
+  );
+}
+
+.dark .bg-stripes-overlap {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(16, 185, 129, 0.12),
+    rgba(16, 185, 129, 0.12) 8px,
+    rgba(16, 185, 129, 0.25) 8px,
+    rgba(16, 185, 129, 0.25) 16px
+  );
+}
